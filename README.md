@@ -18,6 +18,7 @@ Together the six sessions build one assistant, layer by layer:
 3. Bir track seç: `mutfak` (ana track), `hafta-sonu`, `finans` veya `seyahat`.
 4. Oturumun starter dosyasını (`<track>/0N-….json`) Langflow'a yükle, tuvaldeki sarı Note'u oku,
    eksik parçayı tamamla ve Playground'da dene. Takılırsan bir sonraki oturumun starter'ı önceki katmanları hazır getirir.
+   Hazır metinler (Prompt, router kuralları, hakem talimatı) `<track>/kopyala-yapistir.md` dosyasında.
 5. Dosya seçicileri (File) içe aktarmadan sonra boş gelir: dosyaları `assets/<track>/` klasöründen
    yeniden seç.
 
