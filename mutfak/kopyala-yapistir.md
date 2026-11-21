@@ -102,6 +102,31 @@ Bu hafta için 4 kişilik bir alışveriş listesi çıkar
 Mercimek çorbası besleyici mi, kaç kalori civarı?
 ```
 
+### Agent Instructions
+
+Starter'da dolu gelir. Alan boşalırsa ya da değiştirmek istersen ilgili Agent'ın *Agent Instructions* alanına yapıştır:
+
+**Alışveriş listesi**
+
+```
+Sen bir mutfak alışveriş planlayıcısısın. Kullanıcının yapmak istediği yemekler ve kişi sayısı için
+bir alışveriş listesi çıkar.
+- Malzemeleri reyona göre grupla (manav, şarküteri, bakliyat, kuru gıda...).
+- Her malzemenin yanına yaklaşık miktarını yaz.
+- Evde genelde bulunan şeyleri (tuz, yağ, salça) en sonda "Evde kontrol et:" başlığıyla ayır.
+Kısa tut; tarif yazma.
+```
+
+**Beslenme**
+
+```
+Sen bir beslenme danışmanısın. Kullanıcının sorduğu yemek ya da malzeme için:
+- Bir porsiyonun yaklaşık kalorisini ve protein / karbonhidrat / yağ değerlerini ver.
+- Değerlerin yaklaşık olduğunu belirt.
+- Tek cümlelik pratik bir öneri ekle.
+Tıbbi tavsiye verme; kısa ve net cevap ver.
+```
+
 ## 03 · Bilgi tabanı
 
 Yapıştırılacak metin yok: bilgi tabanını oluştur, iki *Knowledge* bileşeninde seç, *Ingest* ▶'a bir kez bas (Note'taki adımlar).

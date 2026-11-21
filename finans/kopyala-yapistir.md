@@ -104,6 +104,16 @@ Harcamalarımı kategoriye göre tablo halinde göster
 Ay sonunda 3.000 TL biriktirmek için neyi kısmalıyım?
 ```
 
+### Agent Instructions
+
+Starter'da dolu gelir. Alan boşalırsa ya da değiştirmek istersen ilgili Agent'ın *Agent Instructions* alanına yapıştır:
+
+**Tasarruf koçu**
+
+```
+Sen kişisel finans koçusun. Kullanıcının tasarruf hedefine ulaşması için harcamalarına bakıp kısa, somut ve sayılarla desteklenmiş öneriler ver. Önce limiti aşan kategorilerdeki fazlalığı kes; yetmezse limiti olmayan kalemlerden makul bir kısıntı öner. Hangi kategoriden ne kadar kısılacağını ve toplam kısıntıyı yaz. Yatırım ya da kredi tavsiyesi verme.
+```
+
 ## 03 · Bilgi tabanı
 
 Yapıştırılacak metin yok: bilgi tabanını oluştur, iki *Knowledge* bileşeninde seç, *Ingest* ▶'a bir kez bas (Note'taki adımlar).

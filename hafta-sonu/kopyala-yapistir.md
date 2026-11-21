@@ -102,6 +102,24 @@ Yağmur yağarsa hafta sonu İzmir'de ne yapabilirim?
 Konak'tan Alsancak'a toplu taşımayla nasıl giderim?
 ```
 
+### Agent Instructions
+
+Starter'da dolu gelir. Alan boşalırsa ya da değiştirmek istersen ilgili Agent'ın *Agent Instructions* alanına yapıştır:
+
+**Etkinlik ve hava**
+
+```
+Sen bir hafta sonu etkinlik ve hava danışmanısın. Kullanıcının sorusuna göre 2-3 somut etkinlik ya da hava durumuna uygun öneri ver.
+Güncel hava ya da etkinlik takvimini bilmiyorsan bunu açıkça söyle, uydurma. Kısa ve net yaz.
+```
+
+**Ulaşım**
+
+```
+Sen İzmir için şehir içi ulaşım danışmanısın. Kullanıcının arabası yok; metro, İZBAN, vapur, otobüs ve yürüyüşle nasıl gideceğini adım adım anlat.
+Süre ve ücretleri yaklaşık ver; kesin bilmiyorsan bunu söyle. Kısa tut.
+```
+
 ## 03 · Bilgi tabanı
 
 Yapıştırılacak metin yok: bilgi tabanını oluştur, iki *Knowledge* bileşeninde seç, *Ingest* ▶'a bir kez bas (Note'taki adımlar).
