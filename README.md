@@ -11,13 +11,14 @@ Together the six sessions build one assistant, layer by layer:
 
 ## Hızlı başlangıç (Türkçe)
 
-1. Etkinlikten önce kur: **Langflow Desktop 1.13.0**, **Ollama** (`ollama pull nomic-embed-text` ve
-   `ollama pull llama3.2:3b`) ve **Node.js**.
-2. Eğitmenden `XAI_API_KEY` ve `TAVILY_API_KEY` anahtarlarını al. Langflow'da *Settings > Global
+1. Etkinlikten önce kur: **Langflow Desktop 1.13.0**, **Ollama** (`ollama pull llama3.2:3b`, yalnız 05 için)
+   ve **Node.js**.
+2. Eğitmenden `XAI_API_KEY`, `OPENAI_API_KEY` (embedding) ve `TAVILY_API_KEY` anahtarlarını al. Langflow'da *Settings > Global
    Variables* altında **Credential** türünde, tam bu adlarla ekle.
 3. Bir track seç: `mutfak` (ana track), `hafta-sonu`, `finans` veya `seyahat`.
 4. Oturumun starter dosyasını (`<track>/0N-….json`) Langflow'a yükle, tuvaldeki sarı Note'u oku,
    eksik parçayı tamamla ve Playground'da dene. Takılırsan bir sonraki oturumun starter'ı önceki katmanları hazır getirir.
+   Hazır metinler (Prompt, router kuralları, hakem talimatı) `<track>/kopyala-yapistir.md` dosyasında.
 5. Dosya seçicileri (File) içe aktarmadan sonra boş gelir: dosyaları `assets/<track>/` klasöründen
    yeniden seç.
 
@@ -28,12 +29,12 @@ Do all of this on your own machine ahead of time; the session itself assumes it 
 | What | How |
 |---|---|
 | **Langflow Desktop 1.13.0** | Install that exact version. The flow JSONs were exported from it. |
-| **Ollama** | Install from [ollama.com](https://ollama.com), then `ollama pull nomic-embed-text` (embeddings) and `ollama pull llama3.2:3b` (local chat model, used in session 05). |
+| **Ollama** | Install from [ollama.com](https://ollama.com), then `ollama pull llama3.2:3b` (local chat model, used only in session 05). |
 | **Node.js** | Needed for `npx`, which starts the filesystem MCP server (session 04 onward). |
-| **API keys** | Get `XAI_API_KEY` (xAI, model `grok-4.3`) and `TAVILY_API_KEY` (web search) from the instructor. Keys live only in Langflow, never in a flow file. |
+| **API keys** | Get `XAI_API_KEY` (xAI, model `grok-4.3`), `OPENAI_API_KEY` (embeddings, model `text-embedding-3-small`) and `TAVILY_API_KEY` (web search) from the instructor. Keys live only in Langflow, never in a flow file. |
 
 > **Corporate networks:** `ollama pull` can fail behind TLS inspection or a zero-trust proxy because
-> the model registry redirects downloads to Cloudflare R2. If it hangs or errors, pull the two models
+> the model registry redirects downloads to Cloudflare R2. If it hangs or errors, pull the model
 > on another network or a phone hotspot.
 
 ### Add the keys to Langflow
@@ -41,12 +42,12 @@ Do all of this on your own machine ahead of time; the session itself assumes it 
 *Settings > Global Variables > Add New*, type **Credential**, one variable per key, with these exact names:
 
 - `XAI_API_KEY`
+- `OPENAI_API_KEY`
 - `TAVILY_API_KEY`
 
 ### Connect Ollama to Langflow (once)
 
-*Settings > Model Providers > Ollama*, base URL `http://localhost:11434`. The knowledge-base steps
-from session 03 need this. If your Langflow asks for an environment-style variable instead, add a
+*Settings > Model Providers > Ollama*, base URL `http://localhost:11434`. Session 05 needs this. If your Langflow asks for an environment-style variable instead, add a
 Generic global variable `OLLAMA_BASE_URL` with the same URL.
 
 ## Pick a track
@@ -91,11 +92,14 @@ with every earlier layer already complete.
 
 ### From session 03: create and fill the knowledge base
 
-Starting at `03-hafiza`, the flow retrieves from a local knowledge base (SQLite, no server, no key).
+Starting at `03-hafiza`, the flow retrieves from a local knowledge base (SQLite, no server). Its
+embeddings come from OpenAI, so `OPENAI_API_KEY` must be set first.
+Then open *Settings > Model Providers > OpenAI* and switch on `text-embedding-3-small` under
+*Embedding Models*: it is off by default, and until it is on, *Add Knowledge* shows "No models enabled".
 Neither the starter nor the solution JSON carries it, so on each machine:
 
 1. Open the **Knowledge** page (left sidebar, bottom) and choose *Add Knowledge*.
-2. Name it for your track and choose **Ollama `nomic-embed-text`** as the embedding model (not the
+2. Name it for your track and choose **OpenAI `text-embedding-3-small`** as the embedding model (not the
    chat model). Names the flows expect:
 
    | Track | Knowledge base | Source file(s) |
