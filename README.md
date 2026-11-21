@@ -126,6 +126,11 @@ The filesystem server is registered **by name** in Langflow, so no path is store
 - **Arguments:** `-y`, `@modelcontextprotocol/server-filesystem`, and the **absolute path** to
   `assets/<track>/notlar` on your machine
 
+On the shared server (`langflow.aiweekend.net`) there is no local repo checkout. Use your personal
+folder instead: `/app/langflow/notlar/kisisel/<your-username>/<track>` (spaces in the username become
+`-`). Every account gets its own copy of the track notes, created automatically within a minute of
+signing up, so participants never write to each other's files.
+
 Then add an **MCP Tools** component, select the server, turn on **Tool Mode**, and connect *Toolset*
 to the Agent's *Tools*. In *Actions* keep only the four you need: `list_allowed_directories`,
 `read_text_file`, `append_file`, `edit_file`. This applies to the **solutions too**: a solution from
