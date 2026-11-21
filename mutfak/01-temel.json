@@ -978,27 +978,154 @@
         "selected": false
       },
       {
-        "id": "note-xas33",
+        "id": "note-33862",
         "type": "noteNode",
         "position": {
-          "x": 430,
-          "y": 100
+          "x": -40,
+          "y": 407
         },
         "width": 400,
-        "height": 340,
+        "height": 160,
         "style": {
           "width": 400,
-          "height": 340
+          "height": 160
         },
         "measured": {
           "width": 400,
-          "height": 340
+          "height": 160
         },
         "data": {
-          "id": "note-xas33",
+          "id": "note-33862",
           "type": "note",
           "node": {
-            "description": "### Eksik parça\n\nBurada bir Prompt bileşeni eksik. Sol menüden *Prompt* ekle, şablona modelin adım adım düşünmesini isteyen bir talimat yaz ve `{malzemeler}` değişkenini kullan. Çıkışını xAI'ın *Input*'una bağla.\n\nDeğişkeni yazınca Prompt üzerinde `malzemeler` diye bir giriş belirir: *Chat Input*'un çıkışını bu girişe bağla.",
+            "description": "### Chat Input\nAkışın giriş kapısı. Playground'a yazdığın mesaj (ya da API'den gelen istek) buradan girer ve bağlı olduğu bileşenlere gider.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "lime"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": 1
+      },
+      {
+        "id": "note-92ef3",
+        "type": "noteNode",
+        "position": {
+          "x": 840,
+          "y": 553
+        },
+        "width": 400,
+        "height": 190,
+        "style": {
+          "width": 400,
+          "height": 190
+        },
+        "measured": {
+          "width": 400,
+          "height": 190
+        },
+        "data": {
+          "id": "note-92ef3",
+          "type": "note",
+          "node": {
+            "description": "### xAI (Grok)\nGrok modelini çalıştırır (grok-4.3). Prompt'tan gelen metni alır ve cevabı yazar. Anahtarını XAI_API_KEY global değişkeninden okur.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "lime"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": 1
+      },
+      {
+        "id": "note-836ad",
+        "type": "noteNode",
+        "position": {
+          "x": 1280,
+          "y": 369
+        },
+        "width": 400,
+        "height": 150,
+        "style": {
+          "width": 400,
+          "height": 150
+        },
+        "measured": {
+          "width": 400,
+          "height": 150
+        },
+        "data": {
+          "id": "note-836ad",
+          "type": "note",
+          "node": {
+            "description": "### Chat Output\nModelin cevabını Playground'da sohbet balonu olarak gösterir. ",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "lime"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": 1
+      },
+      {
+        "id": "note-df49a",
+        "type": "noteNode",
+        "position": {
+          "x": -800,
+          "y": 80
+        },
+        "width": 600,
+        "height": 256,
+        "style": {
+          "width": 600,
+          "height": 256
+        },
+        "measured": {
+          "width": 600,
+          "height": 256
+        },
+        "data": {
+          "id": "note-df49a",
+          "type": "note",
+          "node": {
+            "description": "### Renk rehberi\n\n🟨 **Sarı:** senin yapacağın eksik parça\n\n🟩 **Yeşil:** bu oturumda yeni gelen bileşenin açıklaması\n\n🟦 **Mavi kutu:** önceki oturumlardan kalan, hazır bölüm; dokunman gerekmez",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "neutral"
+            }
+          }
+        },
+        "selected": false
+      },
+      {
+        "id": "note-684d8",
+        "type": "noteNode",
+        "position": {
+          "x": -800,
+          "y": 376
+        },
+        "width": 600,
+        "height": 904,
+        "style": {
+          "width": 600,
+          "height": 904
+        },
+        "measured": {
+          "width": 600,
+          "height": 904
+        },
+        "data": {
+          "id": "note-684d8",
+          "type": "note",
+          "node": {
+            "description": "### Eksik parça\n\nBurada bir Prompt bileşeni eksik. Sol menüden *Prompt* ekle, şablona modelin adım adım düşünmesini isteyen bir talimat yaz ve `{malzemeler}` değişkenini kullan. Çıkışını xAI'ın *Input*'una bağla.\n\nDeğişkeni yazınca Prompt üzerinde `malzemeler` diye bir giriş belirir: *Chat Input*'un çıkışını bu girişe bağla.\n\n---\n\n**Hazır metin.** Önce kendin dene; takılırsan *Template* alanına yapıştır:\n\n```\nSen pratik bir ev aşçısısın. Kullanıcının elindeki malzemeler:\n{malzemeler}\n\nCevap vermeden önce adım adım düşün ve düşünceni göster:\n1. Malzemeleri listele; hangisi ana malzeme olabilir?\n2. Bu malzemelerle yapılabilecek 2-3 yemek fikrini kısaca karşılaştır.\n3. En uygun olanı seç ve nedenini tek cümleyle açıkla.\n4. Seçtiğin tarifi malzeme listesi ve numaralı adımlarla yaz.\n\nEvde olmayan bir malzeme gerekiyorsa en sonda \"Eksik:\" başlığıyla ayrıca belirt.\n```\n\n---\n\n**xAI hatası mı aldın?** `'str' object has no attribute 'get'` görürsen *Settings > Global Variables* altındaki `XAI_API_KEY`'in adını ve değerini kontrol et. Kenar çubuğundan yeni bir xAI bileşeni eklersen *Model Name*'i `grok-4.3` seç (varsayılan model artık yok).",
             "display_name": "",
             "documentation": "",
             "template": {
@@ -1044,5 +1171,5 @@
   "is_component": false,
   "tags": [],
   "endpoint_name": null,
-  "last_tested_version": "1.13.0"
+  "last_tested_version": "1.13.3"
 }

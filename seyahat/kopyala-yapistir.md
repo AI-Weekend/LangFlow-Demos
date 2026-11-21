@@ -119,9 +119,15 @@ Notlarıma bakarak pasaportum bu gezi için uygun mu?
 
 Beklenen: Cevap notlar klasöründeki yolculuk-plani.md'yi okumalı.
 
-## 05 · Yerel model
+## 05 · Yayın
 
-Yapıştırılacak metin yok: Ollama bileşeninde *Model Name* olarak `llama3.2:3b` seç.
+Yapıştırılacak prompt yok: eksik parça endpoint adı (Note'taki adımlar). *Share > API access* > *Input Schema* düğmesindeki **Endpoint Name** alanına yaz:
+
+```
+seyahat-asistani
+```
+
+Sonra *Share* menüsünden **Shareable Playground**'u aç. Botuna dışarıdan `https://KULLANICI-ID.ALAN-ADI/playground/<akış-id>` adresinden girersin.
 
 **Playground'da sor:**
 
@@ -129,7 +135,7 @@ Yapıştırılacak metin yok: Ollama bileşeninde *Model Name* olarak `llama3.2:
 Belge listesine göre seyahat sağlık sigortası en az kaç euro teminatlı olmalı?
 ```
 
-Beklenen: Cevap kendi bilgisayarındaki modelden gelir.
+Beklenen: Aynı akışın cevabı üç yerden gelir: Playground'dan, cURL örneğinden ve paylaştığın sohbet adresinden.
 
 ## 06 · Hakem talimatı
 

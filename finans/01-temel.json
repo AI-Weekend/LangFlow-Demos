@@ -296,7 +296,7 @@
         "type": "genericNode",
         "position": {
           "x": 0,
-          "y": 520
+          "y": 651
         },
         "data": {
           "id": "File-Hhdw2",
@@ -1736,27 +1736,186 @@
         "selected": false
       },
       {
-        "id": "note-EkWv6",
+        "id": "note-327a2",
         "type": "noteNode",
         "position": {
-          "x": 440,
-          "y": -640
+          "x": -40,
+          "y": 427
         },
-        "width": 460,
-        "height": 640,
+        "width": 400,
+        "height": 160,
         "style": {
-          "width": 460,
-          "height": 640
+          "width": 400,
+          "height": 160
         },
         "measured": {
-          "width": 460,
-          "height": 640
+          "width": 400,
+          "height": 160
         },
         "data": {
-          "id": "note-EkWv6",
+          "id": "note-327a2",
           "type": "note",
           "node": {
-            "description": "### Eksik parça: Prompt\n\nBu akışta Prompt bileşeni eksik; model şu an hiçbir şey almıyor.\n\n1. Sol menüden *Prompt Template* bileşenini tuvale ekle.\n2. Şablona modelin cevap vermeden önce adım adım düşünmesini isteyen bir talimat yaz: harcamaları kategoriye göre toplasın, toplamı ve kategorileri hedefle karşılaştırsın, aşımları büyükten küçüğe sıralasın. Bütçe hedeflerini de şablonun içine yaz (aylık toplam 18.000 TL; market 5.000, ulaşım 2.000, eğlence 2.500, abonelik 600 TL).\n3. Şablonda süslü parantezle iki değişken kullan: harcamalar ve soru. Yazınca Prompt üzerinde iki giriş belirir.\n4. Harcamalar (CSV) çıkışını harcamalar girişine, Chat Input'u soru girişine bağla.\n5. Prompt çıkışını xAI'ın *Input* girişine bağla.\n\nHazırlık: Harcamalar (CSV) bileşeninde dosya seç: önce harcamalar.csv dosyasını Langflow'a yükle (repoda flows/assets/finans klasöründe).\n\nPlayground'da bütçeni aşıp aşmadığını sor.",
+            "description": "### Chat Input\nAkışın giriş kapısı. Playground'a yazdığın mesaj (ya da API'den gelen istek) buradan girer ve bağlı olduğu bileşenlere gider.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "lime"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": 1
+      },
+      {
+        "id": "note-21860",
+        "type": "noteNode",
+        "position": {
+          "x": -40,
+          "y": 946
+        },
+        "width": 400,
+        "height": 184,
+        "style": {
+          "width": 400,
+          "height": 184
+        },
+        "measured": {
+          "width": 400,
+          "height": 184
+        },
+        "data": {
+          "id": "note-21860",
+          "type": "note",
+          "node": {
+            "description": "### Read File · harcamalar\nHarcamalar CSV'sini okur ve satırları metin olarak Prompt'lara verir. Model rakamları buradan görür; dosyayı bu bileşende sen seçersin.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "lime"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": 1
+      },
+      {
+        "id": "note-e2b76",
+        "type": "noteNode",
+        "position": {
+          "x": 900,
+          "y": 553
+        },
+        "width": 400,
+        "height": 190,
+        "style": {
+          "width": 400,
+          "height": 190
+        },
+        "measured": {
+          "width": 400,
+          "height": 190
+        },
+        "data": {
+          "id": "note-e2b76",
+          "type": "note",
+          "node": {
+            "description": "### xAI (Grok)\nGrok modelini çalıştırır (grok-4.3). Prompt'tan gelen metni alır ve cevabı yazar. Anahtarını XAI_API_KEY global değişkeninden okur.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "lime"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": 1
+      },
+      {
+        "id": "note-fc58a",
+        "type": "noteNode",
+        "position": {
+          "x": 1360,
+          "y": 369
+        },
+        "width": 400,
+        "height": 160,
+        "style": {
+          "width": 400,
+          "height": 160
+        },
+        "measured": {
+          "width": 400,
+          "height": 160
+        },
+        "data": {
+          "id": "note-fc58a",
+          "type": "note",
+          "node": {
+            "description": "### Chat Output\nModelin cevabını Playground'da sohbet balonu olarak gösterir. Bütçe uyarısı kolunun cevabı burada çıkar.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "lime"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": 1
+      },
+      {
+        "id": "note-d215f",
+        "type": "noteNode",
+        "position": {
+          "x": -800,
+          "y": 80
+        },
+        "width": 600,
+        "height": 256,
+        "style": {
+          "width": 600,
+          "height": 256
+        },
+        "measured": {
+          "width": 600,
+          "height": 256
+        },
+        "data": {
+          "id": "note-d215f",
+          "type": "note",
+          "node": {
+            "description": "### Renk rehberi\n\n🟨 **Sarı:** senin yapacağın eksik parça\n\n🟩 **Yeşil:** bu oturumda yeni gelen bileşenin açıklaması\n\n🟦 **Mavi kutu:** önceki oturumlardan kalan, hazır bölüm; dokunman gerekmez",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "neutral"
+            }
+          }
+        },
+        "selected": false
+      },
+      {
+        "id": "note-81183",
+        "type": "noteNode",
+        "position": {
+          "x": -800,
+          "y": 376
+        },
+        "width": 600,
+        "height": 1426,
+        "style": {
+          "width": 600,
+          "height": 1426
+        },
+        "measured": {
+          "width": 600,
+          "height": 1426
+        },
+        "data": {
+          "id": "note-81183",
+          "type": "note",
+          "node": {
+            "description": "### Eksik parça: Prompt\n\nBu akışta Prompt bileşeni eksik; model şu an hiçbir şey almıyor.\n\n1. Sol menüden *Prompt Template* bileşenini tuvale ekle.\n2. Şablona modelin cevap vermeden önce adım adım düşünmesini isteyen bir talimat yaz: harcamaları kategoriye göre toplasın, toplamı ve kategorileri hedefle karşılaştırsın, aşımları büyükten küçüğe sıralasın. Bütçe hedeflerini de şablonun içine yaz (aylık toplam 18.000 TL; market 5.000, ulaşım 2.000, eğlence 2.500, abonelik 600 TL).\n3. Şablonda süslü parantezle iki değişken kullan: harcamalar ve soru. Yazınca Prompt üzerinde iki giriş belirir.\n4. Harcamalar (CSV) çıkışını harcamalar girişine, Chat Input'u soru girişine bağla.\n5. Prompt çıkışını xAI'ın *Input* girişine bağla.\n\nHazırlık: Harcamalar (CSV) bileşeninde dosya seç: önce harcamalar.csv dosyasını Langflow'a yükle (repoda assets/finans klasöründe).\n\nPlayground'da bütçeni aşıp aşmadığını sor.\n\n---\n\n**Hazır metin.** Önce kendin dene; takılırsan *Template* alanına yapıştır:\n\n```\nSen sakin ve dürüst bir kişisel finans koçusun. Kullanıcının bu ayki harcamaları (CSV):\n{harcamalar}\n\nBütçe hedefleri: aylık toplam harcama en fazla 18.000 TL; kategori limitleri: market 5.000 TL, ulaşım 2.000 TL, eğlence 2.500 TL, abonelik 600 TL; ay sonunda en az 3.000 TL birikim.\n\nKullanıcının isteği: {soru}\n\nCevap vermeden önce adım adım düşün ve düşünceni göster:\n1. Harcamaları kategoriye göre ayrı ayrı topla.\n2. Toplamı ve her kategoriyi hedefle karşılaştır; hedefi ya da limiti aşanları bul.\n3. Aşımları büyükten küçüğe sırala ve her birinin aşım miktarını yaz.\n4. Sonunda \"Uyarı:\" başlığıyla en önemli iki aşımı tek cümleyle özetle.\n```\n\n---\n\n**xAI hatası mı aldın?** `'str' object has no attribute 'get'` görürsen *Settings > Global Variables* altındaki `XAI_API_KEY`'in adını ve değerini kontrol et. Kenar çubuğundan yeni bir xAI bileşeni eklersen *Model Name*'i `grok-4.3` seç (varsayılan model artık yok).",
             "display_name": "",
             "documentation": "",
             "template": {
@@ -1802,5 +1961,5 @@
   "is_component": false,
   "tags": [],
   "endpoint_name": null,
-  "last_tested_version": "1.13.0"
+  "last_tested_version": "1.13.3"
 }

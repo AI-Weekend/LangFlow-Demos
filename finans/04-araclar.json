@@ -7,6 +7,710 @@
   "data": {
     "nodes": [
       {
+        "id": "note-94033",
+        "type": "noteNode",
+        "position": {
+          "x": -24,
+          "y": 324
+        },
+        "width": 368,
+        "height": 327,
+        "style": {
+          "width": 368,
+          "height": 327
+        },
+        "measured": {
+          "width": 368,
+          "height": 327
+        },
+        "data": {
+          "id": "note-94033",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 01 · Temel\nYazdığın mesajı akışa alır.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-30c21",
+        "type": "noteNode",
+        "position": {
+          "x": -24,
+          "y": 715
+        },
+        "width": 368,
+        "height": 419,
+        "style": {
+          "width": 368,
+          "height": 419
+        },
+        "measured": {
+          "width": 368,
+          "height": 419
+        },
+        "data": {
+          "id": "note-30c21",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 01 · Temel\nHarcama CSV'sini okuyup Prompt'lara verir.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-f3d4a",
+        "type": "noteNode",
+        "position": {
+          "x": -24,
+          "y": 1198
+        },
+        "width": 368,
+        "height": 597,
+        "style": {
+          "width": 368,
+          "height": 597
+        },
+        "measured": {
+          "width": 368,
+          "height": 597
+        },
+        "data": {
+          "id": "note-f3d4a",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 02 · Akış\nRouter, Structured Output ve koçun ortak modeli.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-1e227",
+        "type": "noteNode",
+        "position": {
+          "x": -24,
+          "y": 1859
+        },
+        "width": 368,
+        "height": 395,
+        "style": {
+          "width": 368,
+          "height": 395
+        },
+        "measured": {
+          "width": 368,
+          "height": 395
+        },
+        "data": {
+          "id": "note-1e227",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 03 · Hafıza\nBütçe hedefleri dosyasını okur.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-76d5b",
+        "type": "noteNode",
+        "position": {
+          "x": 436,
+          "y": 210
+        },
+        "width": 368,
+        "height": 621,
+        "style": {
+          "width": 368,
+          "height": 621
+        },
+        "measured": {
+          "width": 368,
+          "height": 621
+        },
+        "data": {
+          "id": "note-76d5b",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 02 · Akış\nMesajı niyetine göre doğru uzmana yollar.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-b6696",
+        "type": "noteNode",
+        "position": {
+          "x": 436,
+          "y": 904
+        },
+        "width": 368,
+        "height": 341,
+        "style": {
+          "width": 368,
+          "height": 341
+        },
+        "measured": {
+          "width": 368,
+          "height": 341
+        },
+        "data": {
+          "id": "note-b6696",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 03 · Hafıza\nÖnceki mesajları Prompt'a taşır.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-28508",
+        "type": "noteNode",
+        "position": {
+          "x": 436,
+          "y": 1404
+        },
+        "width": 368,
+        "height": 535,
+        "style": {
+          "width": 368,
+          "height": 535
+        },
+        "measured": {
+          "width": 368,
+          "height": 535
+        },
+        "data": {
+          "id": "note-28508",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 03 · Hafıza\nMetni küçük parçalara böler.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-10d08",
+        "type": "noteNode",
+        "position": {
+          "x": 436,
+          "y": 2003
+        },
+        "width": 368,
+        "height": 653,
+        "style": {
+          "width": 368,
+          "height": 653
+        },
+        "measured": {
+          "width": 368,
+          "height": 653
+        },
+        "data": {
+          "id": "note-10d08",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 03 · Hafıza\nSoruya en yakın hedef parçalarını getirir.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-9b063",
+        "type": "noteNode",
+        "position": {
+          "x": 916,
+          "y": -180
+        },
+        "width": 368,
+        "height": 573,
+        "style": {
+          "width": 368,
+          "height": 573
+        },
+        "measured": {
+          "width": 368,
+          "height": 573
+        },
+        "data": {
+          "id": "note-9b063",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 01 · Temel\nHarcamaları hedefle karşılaştıran istemi kurar.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-492fd",
+        "type": "noteNode",
+        "position": {
+          "x": 916,
+          "y": 464
+        },
+        "width": 368,
+        "height": 549,
+        "style": {
+          "width": 368,
+          "height": 549
+        },
+        "measured": {
+          "width": 368,
+          "height": 549
+        },
+        "data": {
+          "id": "note-492fd",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 02 · Akış\nKategori dökümü için istemi kurar.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-1582f",
+        "type": "noteNode",
+        "position": {
+          "x": 916,
+          "y": 1077
+        },
+        "width": 368,
+        "height": 491,
+        "style": {
+          "width": 368,
+          "height": 491
+        },
+        "measured": {
+          "width": 368,
+          "height": 491
+        },
+        "data": {
+          "id": "note-1582f",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 02 · Akış\nKonu dışı soru için sabit cevabı hazırlar.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-ab005",
+        "type": "noteNode",
+        "position": {
+          "x": 916,
+          "y": 1632
+        },
+        "width": 368,
+        "height": 737,
+        "style": {
+          "width": 368,
+          "height": 737
+        },
+        "measured": {
+          "width": 368,
+          "height": 737
+        },
+        "data": {
+          "id": "note-ab005",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 02 · Akış\nKoç için harcama ve soruyu istemde birleştirir.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-ea983",
+        "type": "noteNode",
+        "position": {
+          "x": 916,
+          "y": 2433
+        },
+        "width": 368,
+        "height": 575,
+        "style": {
+          "width": 368,
+          "height": 575
+        },
+        "measured": {
+          "width": 368,
+          "height": 575
+        },
+        "data": {
+          "id": "note-ea983",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 03 · Hafıza\nParçaları vektöre çevirip bilgi tabanına yazar.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-090ee",
+        "type": "noteNode",
+        "position": {
+          "x": 916,
+          "y": 3072
+        },
+        "width": 368,
+        "height": 475,
+        "style": {
+          "width": 368,
+          "height": 475
+        },
+        "measured": {
+          "width": 368,
+          "height": 475
+        },
+        "data": {
+          "id": "note-090ee",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 03 · Hafıza\nBulunan hedefleri tek bir metne çevirir.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-ae28d",
+        "type": "noteNode",
+        "position": {
+          "x": 1376,
+          "y": -196
+        },
+        "width": 368,
+        "height": 573,
+        "style": {
+          "width": 368,
+          "height": 573
+        },
+        "measured": {
+          "width": 368,
+          "height": 573
+        },
+        "data": {
+          "id": "note-ae28d",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 01 · Temel\nGrok modeliyle cevabı yazar.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-e372b",
+        "type": "noteNode",
+        "position": {
+          "x": 1376,
+          "y": 441
+        },
+        "width": 368,
+        "height": 533,
+        "style": {
+          "width": 368,
+          "height": 533
+        },
+        "measured": {
+          "width": 368,
+          "height": 533
+        },
+        "data": {
+          "id": "note-e372b",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 02 · Akış\nCevabı belirlenen şemada, düzenli veri olarak üretir.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-4d934",
+        "type": "noteNode",
+        "position": {
+          "x": 1376,
+          "y": 1038
+        },
+        "width": 368,
+        "height": 575,
+        "style": {
+          "width": 368,
+          "height": 575
+        },
+        "measured": {
+          "width": 368,
+          "height": 575
+        },
+        "data": {
+          "id": "note-4d934",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 02 · Akış\nSayılarla desteklenmiş tasarruf önerisi verir.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-74b86",
+        "type": "noteNode",
+        "position": {
+          "x": 1836,
+          "y": -96
+        },
+        "width": 368,
+        "height": 289,
+        "style": {
+          "width": 368,
+          "height": 289
+        },
+        "measured": {
+          "width": 368,
+          "height": 289
+        },
+        "data": {
+          "id": "note-74b86",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 01 · Temel\nBütçe uyarısı cevabını gösterir.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-12513",
+        "type": "noteNode",
+        "position": {
+          "x": 1836,
+          "y": 440
+        },
+        "width": 368,
+        "height": 475,
+        "style": {
+          "width": 368,
+          "height": 475
+        },
+        "measured": {
+          "width": 368,
+          "height": 475
+        },
+        "data": {
+          "id": "note-12513",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 02 · Akış\nTablo çıktısını okunur satırlara çevirir.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-2fba6",
+        "type": "noteNode",
+        "position": {
+          "x": 1836,
+          "y": 1024
+        },
+        "width": 368,
+        "height": 289,
+        "style": {
+          "width": 368,
+          "height": 289
+        },
+        "measured": {
+          "width": 368,
+          "height": 289
+        },
+        "data": {
+          "id": "note-2fba6",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 02 · Akış\nKoçun cevabını gösterir.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-2c8be",
+        "type": "noteNode",
+        "position": {
+          "x": 2296,
+          "y": 484
+        },
+        "width": 368,
+        "height": 289,
+        "style": {
+          "width": 368,
+          "height": 289
+        },
+        "measured": {
+          "width": 368,
+          "height": 289
+        },
+        "data": {
+          "id": "note-2c8be",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 02 · Akış\nKonu dışı cevabını gösterir.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
+        "id": "note-5244b",
+        "type": "noteNode",
+        "position": {
+          "x": 2296,
+          "y": 837
+        },
+        "width": 368,
+        "height": 289,
+        "style": {
+          "width": 368,
+          "height": 289
+        },
+        "measured": {
+          "width": 368,
+          "height": 289
+        },
+        "data": {
+          "id": "note-5244b",
+          "type": "note",
+          "node": {
+            "description": "### Hazır · 02 · Akış\nKategori raporunu gösterir.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "blue"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": -1
+      },
+      {
         "id": "ChatInput-S3014",
         "type": "genericNode",
         "position": {
@@ -296,7 +1000,7 @@
         "type": "genericNode",
         "position": {
           "x": 0,
-          "y": 820
+          "y": 835
         },
         "data": {
           "id": "File-ferQH",
@@ -2043,7 +2747,7 @@
                 "trace_as_metadata": true,
                 "track_in_telemetry": true,
                 "type": "bool",
-                "value": false
+                "value": true
               },
               "input_text": {
                 "_input_type": "MessageTextInput",
@@ -2287,6 +2991,22 @@
                 "group_outputs": true,
                 "options": null,
                 "tool_mode": true
+              },
+              {
+                "types": ["Message"],
+                "selected": "Message",
+                "name": "default_result",
+                "hidden": null,
+                "display_name": "Else",
+                "method": "default_response",
+                "value": "__UNDEFINED__",
+                "cache": true,
+                "required_inputs": null,
+                "allows_loop": false,
+                "loop_types": null,
+                "group_outputs": true,
+                "options": null,
+                "tool_mode": true
               }
             ],
             "field_order": [
@@ -2327,7 +3047,7 @@
         "type": "genericNode",
         "position": {
           "x": 0,
-          "y": 1180
+          "y": 1318
         },
         "data": {
           "id": "xAIModel-cubIw",
@@ -2937,7 +3657,7 @@
         "type": "genericNode",
         "position": {
           "x": 1400,
-          "y": 560
+          "y": 561
         },
         "data": {
           "id": "StructuredOutput-YdBCi",
@@ -3486,7 +4206,7 @@
         "type": "genericNode",
         "position": {
           "x": 2320,
-          "y": 620
+          "y": 933
         },
         "data": {
           "id": "ChatOutput-bQSdt",
@@ -3770,7 +4490,7 @@
         "type": "genericNode",
         "position": {
           "x": 1400,
-          "y": 1000
+          "y": 1158
         },
         "data": {
           "id": "Agent-YiPBN",
@@ -4187,7 +4907,7 @@
                 "trace_as_metadata": true,
                 "track_in_telemetry": true,
                 "type": "int",
-                "value": 1
+                "value": 100
               },
               "output_schema": {
                 "_input_type": "TableInput",
@@ -4639,7 +5359,7 @@
         "type": "genericNode",
         "position": {
           "x": 0,
-          "y": 1500
+          "y": 1955
         },
         "data": {
           "id": "File-bct5l",
@@ -5648,7 +6368,7 @@
         "type": "genericNode",
         "position": {
           "x": 940,
-          "y": 1500
+          "y": 2553
         },
         "data": {
           "id": "Knowledge-lO3tJ",
@@ -6215,7 +6935,7 @@
         "type": "genericNode",
         "position": {
           "x": 460,
-          "y": 1800
+          "y": 2123
         },
         "data": {
           "id": "Knowledge-ADDEQ",
@@ -6766,7 +7486,7 @@
         "type": "genericNode",
         "position": {
           "x": 940,
-          "y": 1800
+          "y": 3192
         },
         "data": {
           "id": "ParserComponent-Sww3M",
@@ -7312,7 +8032,7 @@
         "type": "genericNode",
         "position": {
           "x": 940,
-          "y": 1000
+          "y": 1752
         },
         "data": {
           "id": "Prompt-F8yFl",
@@ -7561,7 +8281,7 @@
         "type": "genericNode",
         "position": {
           "x": 940,
-          "y": 1900
+          "y": 3611
         },
         "data": {
           "id": "TavilySearchComponent-xMs8i",
@@ -8147,27 +8867,624 @@
         "selected": false
       },
       {
-        "id": "note-0M3bh",
-        "type": "noteNode",
+        "id": "Prompt-else-8b8ed",
+        "type": "genericNode",
         "position": {
-          "x": 920,
-          "y": 1490
-        },
-        "width": 460,
-        "height": 640,
-        "style": {
-          "width": 460,
-          "height": 640
-        },
-        "measured": {
-          "width": 460,
-          "height": 640
+          "x": 940,
+          "y": 1197
         },
         "data": {
-          "id": "note-0M3bh",
+          "id": "Prompt-else-8b8ed",
+          "type": "Prompt Template",
+          "node": {
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "api_editable": false,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from typing import Any\n\nfrom lfx.base.prompts.api_utils import process_prompt_template\nfrom lfx.custom.custom_component.component import Component\nfrom lfx.inputs.input_mixin import FieldTypes\nfrom lfx.inputs.inputs import DefaultPromptField\nfrom lfx.io import BoolInput, MessageTextInput, Output, PromptInput\nfrom lfx.log.logger import logger\nfrom lfx.schema.dotdict import dotdict\nfrom lfx.schema.message import Message\nfrom lfx.template.utils import update_template_values\nfrom lfx.utils.mustache_security import validate_mustache_template\n\n\nclass PromptComponent(Component):\n    display_name: str = \"Prompt Template\"\n    description: str = \"Create a prompt template with dynamic variables.\"\n    documentation: str = \"https://docs.langflow.org/components-prompts\"\n    icon = \"prompts\"\n    trace_type = \"prompt\"\n    name = \"Prompt Template\"\n\n    inputs = [\n        PromptInput(name=\"template\", display_name=\"Template\"),\n        BoolInput(\n            name=\"use_double_brackets\",\n            display_name=\"Use Double Brackets\",\n            value=False,\n            advanced=True,\n            info=\"Use {{variable}} syntax instead of {variable}.\",\n            real_time_refresh=True,\n        ),\n        MessageTextInput(\n            name=\"tool_placeholder\",\n            display_name=\"Tool Placeholder\",\n            tool_mode=True,\n            advanced=True,\n            show=False,\n            info=\"A placeholder input for tool mode.\",\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Prompt\", name=\"prompt\", method=\"build_prompt\"),\n    ]\n\n    def update_build_config(self, build_config: dotdict, field_value: Any, field_name: str | None = None) -> dotdict:\n        \"\"\"Update the template field type based on the selected mode.\"\"\"\n        if field_name == \"use_double_brackets\":\n            # Change the template field type based on mode\n            is_mustache = field_value is True\n            if is_mustache:\n                build_config[\"template\"][\"type\"] = FieldTypes.MUSTACHE_PROMPT.value\n            else:\n                build_config[\"template\"][\"type\"] = FieldTypes.PROMPT.value\n\n            # Re-process the template to update variables when mode changes\n            template_value = build_config.get(\"template\", {}).get(\"value\", \"\")\n            if template_value:\n                # Ensure custom_fields is properly initialized\n                if \"custom_fields\" not in build_config:\n                    build_config[\"custom_fields\"] = {}\n\n                # Clean up fields from the OLD mode before processing with NEW mode\n                # This ensures we don't keep fields with wrong syntax even if validation fails\n                old_custom_fields = build_config[\"custom_fields\"].get(\"template\", [])\n                for old_field in list(old_custom_fields):\n                    # Remove the field from custom_fields and template\n                    if old_field in old_custom_fields:\n                        old_custom_fields.remove(old_field)\n                    build_config.pop(old_field, None)\n\n                # Try to process template with new mode to add new variables\n                # If validation fails, at least we cleaned up old fields\n                try:\n                    # Validate mustache templates for security\n                    if is_mustache:\n                        validate_mustache_template(template_value)\n\n                    # Re-process template with new mode to add new variables\n                    _ = process_prompt_template(\n                        template=template_value,\n                        name=\"template\",\n                        custom_fields=build_config[\"custom_fields\"],\n                        frontend_node_template=build_config,\n                        is_mustache=is_mustache,\n                    )\n                except ValueError as e:\n                    # If validation fails, we still updated the mode and cleaned old fields\n                    # User will see error when they try to save\n                    logger.debug(\"Template validation failed during mode switch\", exc_info=e)\n        return build_config\n\n    async def build_prompt(self) -> Message:\n        use_double_brackets = self.use_double_brackets if hasattr(self, \"use_double_brackets\") else False\n        template_format = \"mustache\" if use_double_brackets else \"f-string\"\n        prompt = await Message.from_template_and_variables(template_format=template_format, **self._attributes)\n        self.status = prompt.text\n        return prompt\n\n    def _update_template(self, frontend_node: dict):\n        prompt_template = frontend_node[\"template\"][\"template\"][\"value\"]\n        use_double_brackets = frontend_node[\"template\"].get(\"use_double_brackets\", {}).get(\"value\", False)\n        is_mustache = use_double_brackets is True\n\n        try:\n            # Validate mustache templates for security\n            if is_mustache:\n                validate_mustache_template(prompt_template)\n\n            custom_fields = frontend_node[\"custom_fields\"]\n            frontend_node_template = frontend_node[\"template\"]\n            _ = process_prompt_template(\n                template=prompt_template,\n                name=\"template\",\n                custom_fields=custom_fields,\n                frontend_node_template=frontend_node_template,\n                is_mustache=is_mustache,\n            )\n        except ValueError as e:\n            # If validation fails, don't add variables but allow component to be created\n            logger.debug(\"Template validation failed in _update_template\", exc_info=e)\n        return frontend_node\n\n    async def update_frontend_node(self, new_frontend_node: dict, current_frontend_node: dict):\n        \"\"\"This function is called after the code validation is done.\"\"\"\n        frontend_node = await super().update_frontend_node(new_frontend_node, current_frontend_node)\n        template = frontend_node[\"template\"][\"template\"][\"value\"]\n        use_double_brackets = frontend_node[\"template\"].get(\"use_double_brackets\", {}).get(\"value\", False)\n        is_mustache = use_double_brackets is True\n\n        try:\n            # Validate mustache templates for security\n            if is_mustache:\n                validate_mustache_template(template)\n\n            # Kept it duplicated for backwards compatibility\n            _ = process_prompt_template(\n                template=template,\n                name=\"template\",\n                custom_fields=frontend_node[\"custom_fields\"],\n                frontend_node_template=frontend_node[\"template\"],\n                is_mustache=is_mustache,\n            )\n        except ValueError as e:\n            # If validation fails, don't add variables but allow component to be updated\n            logger.debug(\"Template validation failed in update_frontend_node\", exc_info=e)\n        # Now that template is updated, we need to grab any values that were set in the current_frontend_node\n        # and update the frontend_node with those values\n        update_template_values(new_template=frontend_node, previous_template=current_frontend_node[\"template\"])\n        return frontend_node\n\n    def _get_fallback_input(self, **kwargs):\n        return DefaultPromptField(**kwargs)\n"
+              },
+              "template": {
+                "_input_type": "PromptInput",
+                "advanced": false,
+                "api_editable": false,
+                "display_name": "Template",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "template",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "track_in_telemetry": false,
+                "type": "prompt",
+                "value": "“{soru}” benim konum dışında. Ben bir bütçe koçuyum; şunlarda yardımcı olabilirim:\n- Bütçeni aşıp aşmadığını söylemek\n- Harcamalarını kategoriye göre dökmek\n- Tasarruf önerisi vermek\n\nÖrnek: Bu ay hangi kategorilerde limiti aştım?"
+              },
+              "tool_placeholder": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "api_editable": false,
+                "display_name": "Tool Placeholder",
+                "dynamic": false,
+                "info": "A placeholder input for tool mode.",
+                "input_types": ["Message"],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "tool_placeholder",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "use_double_brackets": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "api_editable": false,
+                "display_name": "Use Double Brackets",
+                "dynamic": false,
+                "info": "Use {{variable}} syntax instead of {variable}.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "use_double_brackets",
+                "override_skip": false,
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "bool",
+                "value": false
+              },
+              "soru": {
+                "field_type": "str",
+                "required": false,
+                "placeholder": "",
+                "list": false,
+                "show": true,
+                "multiline": true,
+                "value": "",
+                "fileTypes": [],
+                "file_path": "",
+                "name": "soru",
+                "display_name": "soru",
+                "advanced": false,
+                "api_editable": false,
+                "input_types": ["Message"],
+                "dynamic": false,
+                "info": "",
+                "load_from_db": false,
+                "title_case": false,
+                "type": "str"
+              }
+            },
+            "description": "Create a prompt template with dynamic variables.",
+            "icon": "prompts",
+            "is_input": null,
+            "is_output": null,
+            "is_composition": null,
+            "base_classes": ["Message"],
+            "name": "",
+            "display_name": "Konu dışı istemi",
+            "priority": null,
+            "documentation": "https://docs.langflow.org/components-prompts",
+            "minimized": false,
+            "custom_fields": {
+              "template": ["soru"]
+            },
+            "output_types": [],
+            "full_path": null,
+            "pinned": false,
+            "conditional_paths": [],
+            "frozen": false,
+            "outputs": [
+              {
+                "types": ["Message"],
+                "selected": "Message",
+                "name": "prompt",
+                "hidden": null,
+                "display_name": "Prompt",
+                "method": "build_prompt",
+                "value": "__UNDEFINED__",
+                "cache": true,
+                "required_inputs": null,
+                "allows_loop": false,
+                "loop_types": null,
+                "group_outputs": false,
+                "options": null,
+                "tool_mode": true
+              }
+            ],
+            "field_order": ["template", "use_double_brackets", "tool_placeholder"],
+            "beta": false,
+            "legacy": false,
+            "replacement": null,
+            "error": null,
+            "edited": false,
+            "metadata": {
+              "code_hash": "e3714ffe5d15",
+              "component_class_name": "PromptComponent",
+              "dependencies": {
+                "dependencies": [
+                  {
+                    "name": "lfx",
+                    "version": null
+                  }
+                ],
+                "total_dependencies": 1
+              },
+              "module": "lfx.components.models_and_agents.prompt.PromptComponent"
+            },
+            "tool_mode": false,
+            "add_tool_output": null,
+            "lf_version": "1.13.0"
+          },
+          "showNode": true
+        },
+        "selected": false
+      },
+      {
+        "id": "ChatOutput-else-8b8ed",
+        "type": "genericNode",
+        "position": {
+          "x": 2320,
+          "y": 580
+        },
+        "data": {
+          "id": "ChatOutput-else-8b8ed",
+          "type": "ChatOutput",
+          "node": {
+            "base_classes": ["Message"],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Display a chat message in the Playground.",
+            "display_name": "Konu dışı cevabı",
+            "documentation": "https://docs.langflow.org/chat-input-and-output",
+            "edited": false,
+            "field_order": [
+              "input_value",
+              "should_store_message",
+              "sender",
+              "sender_name",
+              "session_id",
+              "context_id",
+              "data_template",
+              "clean_data"
+            ],
+            "frozen": false,
+            "icon": "MessagesSquare",
+            "legacy": false,
+            "metadata": {
+              "code_hash": "0aab1c78e1dc",
+              "component_class_name": "ChatOutput",
+              "dependencies": {
+                "dependencies": [
+                  {
+                    "name": "orjson",
+                    "version": "3.11.9"
+                  },
+                  {
+                    "name": "fastapi",
+                    "version": "0.139.2"
+                  },
+                  {
+                    "name": "lfx",
+                    "version": null
+                  }
+                ],
+                "total_dependencies": 3
+              },
+              "module": "lfx.components.input_output.chat_output.ChatOutput"
+            },
+            "minimized": true,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Output Message",
+                "group_outputs": false,
+                "method": "message_response",
+                "name": "message",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": ["Message"],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "clean_data": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "api_editable": false,
+                "display_name": "Basic Clean Data",
+                "dynamic": false,
+                "info": "Whether to clean data before converting to string.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "clean_data",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "bool",
+                "value": true
+              },
+              "code": {
+                "advanced": true,
+                "api_editable": false,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from collections.abc import Generator\nfrom typing import Any\n\nimport orjson\nfrom fastapi.encoders import jsonable_encoder\n\nfrom lfx.base.io.chat import ChatComponent\nfrom lfx.helpers.data import safe_convert\nfrom lfx.inputs.inputs import BoolInput, DropdownInput, HandleInput, MessageTextInput\nfrom lfx.schema.data import Data\nfrom lfx.schema.dataframe import DataFrame\nfrom lfx.schema.message import Message\nfrom lfx.schema.properties import Source\nfrom lfx.template.field.base import Output\nfrom lfx.utils.constants import (\n    MESSAGE_SENDER_AI,\n    MESSAGE_SENDER_NAME_AI,\n    MESSAGE_SENDER_USER,\n)\n\n\nclass ChatOutput(ChatComponent):\n    display_name = \"Chat Output\"\n    description = \"Display a chat message in the Playground.\"\n    documentation: str = \"https://docs.langflow.org/chat-input-and-output\"\n    icon = \"MessagesSquare\"\n    name = \"ChatOutput\"\n    minimized = True\n\n    inputs = [\n        HandleInput(\n            name=\"input_value\",\n            display_name=\"Inputs\",\n            info=\"Message to be passed as output.\",\n            input_types=[\"Data\", \"JSON\", \"DataFrame\", \"Table\", \"Message\"],\n            required=True,\n        ),\n        BoolInput(\n            name=\"should_store_message\",\n            display_name=\"Store Messages\",\n            info=\"Store the message in the history.\",\n            value=True,\n            advanced=True,\n        ),\n        DropdownInput(\n            name=\"sender\",\n            display_name=\"Sender Type\",\n            options=[MESSAGE_SENDER_AI, MESSAGE_SENDER_USER],\n            value=MESSAGE_SENDER_AI,\n            advanced=True,\n            info=\"Type of sender.\",\n        ),\n        MessageTextInput(\n            name=\"sender_name\",\n            display_name=\"Sender Name\",\n            info=\"Name of the sender.\",\n            value=MESSAGE_SENDER_NAME_AI,\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"session_id\",\n            display_name=\"Session ID\",\n            info=\"The session ID of the chat. If empty, the current session ID parameter will be used.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"context_id\",\n            display_name=\"Context ID\",\n            info=\"The context ID of the chat. Adds an extra layer to the local memory.\",\n            value=\"\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"data_template\",\n            display_name=\"Data Template\",\n            value=\"{text}\",\n            advanced=True,\n            info=\"Template to convert Data to Text. If left empty, it will be dynamically set to the Data's text key.\",\n        ),\n        BoolInput(\n            name=\"clean_data\",\n            display_name=\"Basic Clean Data\",\n            value=True,\n            advanced=True,\n            info=\"Whether to clean data before converting to string.\",\n        ),\n    ]\n    outputs = [\n        Output(\n            display_name=\"Output Message\",\n            name=\"message\",\n            method=\"message_response\",\n        ),\n    ]\n\n    def _build_source(self, id_: str | None, display_name: str | None, source: str | None) -> Source:\n        source_dict = {}\n        if id_:\n            source_dict[\"id\"] = id_\n        if display_name:\n            source_dict[\"display_name\"] = display_name\n        if source:\n            # Handle case where source is a ChatOpenAI object\n            if hasattr(source, \"model_name\"):\n                source_dict[\"source\"] = source.model_name\n            elif hasattr(source, \"model\"):\n                source_dict[\"source\"] = str(source.model)\n            else:\n                source_dict[\"source\"] = str(source)\n        return Source(**source_dict)\n\n    async def message_response(self) -> Message:\n        # First convert the input to string if needed\n        text = self.convert_to_string()\n\n        # Get source properties\n        source, _, display_name, source_id = self.get_properties_from_source_component()\n\n        # Create or use existing Message object\n        if isinstance(self.input_value, Message) and not self.is_connected_to_chat_input():\n            message = self.input_value\n            # Update message properties\n            message.text = text\n            # Preserve existing session_id from the incoming message if it exists\n            existing_session_id = message.session_id\n        else:\n            message = Message(text=text)\n            existing_session_id = None\n\n        # Set message properties\n        message.sender = self.sender\n        message.sender_name = self.sender_name\n        # Preserve session_id from incoming message, or use component/graph session_id\n        message.session_id = (\n            self.session_id or existing_session_id or (self.graph.session_id if hasattr(self, \"graph\") else None) or \"\"\n        )\n        message.context_id = self.context_id\n        message.flow_id = self.graph.flow_id if hasattr(self, \"graph\") else None\n        message.properties.source = self._build_source(source_id, display_name, source)\n\n        # Store message if needed\n        if message.session_id and self.should_store_message:\n            stored_message = await self.send_message(message)\n            self.message.value = stored_message\n            message = stored_message\n\n        # Set accumulated token usage from all upstream LLM vertices.\n        # This must happen AFTER send_message() because streaming captures\n        # usage from chunks and would overwrite accumulated totals.\n        if hasattr(self, \"_vertex\") and self._vertex is not None:\n            accumulated_usage = self._vertex._accumulate_upstream_token_usage()  # noqa: SLF001\n            if accumulated_usage:\n                message.properties.usage = accumulated_usage\n                if self.should_store_message and message.get_id():\n                    message = await self._update_stored_message(message)\n                    await self._send_message_event(message, id_=message.get_id())\n\n        self.status = message\n        return message\n\n    def _serialize_data(self, data: Data) -> str:\n        \"\"\"Serialize Data object to JSON string.\"\"\"\n        # Convert data.data to JSON-serializable format\n        serializable_data = jsonable_encoder(data.data)\n        # Serialize with orjson, enabling pretty printing with indentation\n        json_bytes = orjson.dumps(serializable_data, option=orjson.OPT_INDENT_2)\n        # Convert bytes to string and wrap in Markdown code blocks\n        return \"```json\\n\" + json_bytes.decode(\"utf-8\") + \"\\n```\"\n\n    def _validate_input(self) -> None:\n        \"\"\"Validate the input data and raise ValueError if invalid.\"\"\"\n        if self.input_value is None:\n            msg = \"Input data cannot be None\"\n            raise ValueError(msg)\n        if isinstance(self.input_value, list) and not all(\n            isinstance(item, Message | Data | DataFrame | str) for item in self.input_value\n        ):\n            invalid_types = [\n                type(item).__name__\n                for item in self.input_value\n                if not isinstance(item, Message | Data | DataFrame | str)\n            ]\n            msg = f\"Expected Data or DataFrame or Message or str, got {invalid_types}\"\n            raise TypeError(msg)\n        if not isinstance(\n            self.input_value,\n            Message | Data | DataFrame | str | list | Generator | type(None),\n        ):\n            type_name = type(self.input_value).__name__\n            msg = f\"Expected Data or DataFrame or Message or str, Generator or None, got {type_name}\"\n            raise TypeError(msg)\n\n    def convert_to_string(self) -> str | Generator[Any, None, None]:\n        \"\"\"Convert input data to string with proper error handling.\"\"\"\n        self._validate_input()\n        clean_data: bool = getattr(self, \"clean_data\", False)\n        if isinstance(self.input_value, list):\n            return \"\\n\".join([safe_convert(item, clean_data=clean_data) for item in self.input_value])\n        if isinstance(self.input_value, Generator):\n            return self.input_value\n        return safe_convert(self.input_value, clean_data=clean_data)\n"
+              },
+              "context_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "api_editable": false,
+                "display_name": "Context ID",
+                "dynamic": false,
+                "info": "The context ID of the chat. Adds an extra layer to the local memory.",
+                "input_types": ["Message"],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "context_id",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "data_template": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "api_editable": false,
+                "display_name": "Data Template",
+                "dynamic": false,
+                "info": "Template to convert Data to Text. If left empty, it will be dynamically set to the Data's text key.",
+                "input_types": ["Message"],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "data_template",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "{text}"
+              },
+              "input_value": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "api_editable": false,
+                "display_name": "Inputs",
+                "dynamic": false,
+                "info": "Message to be passed as output.",
+                "input_types": ["Data", "JSON", "DataFrame", "Table", "Message"],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "input_value",
+                "override_skip": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "other",
+                "value": ""
+              },
+              "sender": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "api_editable": false,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Sender Type",
+                "dynamic": false,
+                "external_options": {},
+                "info": "Type of sender.",
+                "name": "sender",
+                "options": ["Machine", "User"],
+                "options_metadata": [],
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "str",
+                "value": "Machine"
+              },
+              "sender_name": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "api_editable": false,
+                "display_name": "Sender Name",
+                "dynamic": false,
+                "info": "Name of the sender.",
+                "input_types": ["Message"],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "sender_name",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "Finans koçu"
+              },
+              "session_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "api_editable": false,
+                "display_name": "Session ID",
+                "dynamic": false,
+                "info": "The session ID of the chat. If empty, the current session ID parameter will be used.",
+                "input_types": ["Message"],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "session_id",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "should_store_message": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "api_editable": false,
+                "display_name": "Store Messages",
+                "dynamic": false,
+                "info": "Store the message in the history.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "should_store_message",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "bool",
+                "value": true
+              }
+            },
+            "tool_mode": false,
+            "lf_version": "1.13.0"
+          },
+          "showNode": true
+        },
+        "selected": false
+      },
+      {
+        "id": "note-39e88",
+        "type": "noteNode",
+        "position": {
+          "x": 900,
+          "y": 3956
+        },
+        "width": 400,
+        "height": 208,
+        "style": {
+          "width": 400,
+          "height": 208
+        },
+        "measured": {
+          "width": 400,
+          "height": 208
+        },
+        "data": {
+          "id": "note-39e88",
           "type": "note",
           "node": {
-            "description": "### Eksik parça: MCP araç bağlantısı\n\nKoçun notlar klasörüne erişimi yok. Web arama ve hesap makinesi araçları bağlı ama dosya aracı eksik. Önce MCP sunucusunu Langflow'a tanıt:\n\n1. Langflow ayarlarında *MCP Servers* bölümünü aç, *Add MCP Server* de ve *STDIO* seç.\n2. Ad: finans-notlar. Command: npx. Argümanlar sırayla: -y, @modelcontextprotocol/server-filesystem ve flows/assets/finans/notlar klasörünün kendi bilgisayarındaki tam yolu. Sunucudaki Langflow'da (langflow.aiweekend.net) yol: `/app/langflow/notlar/kisisel/<kullanıcı-adın>/finans` (kullanıcı adındaki boşluk yerine - yaz). Herkesin klasörü ayrıdır, ortak klasöre yazma.\n\nSonra akışta:\n\n3. Sol menüden *MCP Tools* bileşenini ekle, *MCP Server* alanından finans-notlar sunucusunu seç.\n4. Bileşenin başlığındaki *Tool Mode* anahtarını aç; bileşen bir araca dönüşür.\n5. Araç listesinde işine yarayanları açık bırak: dosya oku, dosya yaz, klasör listele, izinli klasörü göster.\n6. Araç çıkışını Tasarruf koçu (Agent) bileşeninin *Tools* girişine bağla.\n\nHazırlık: Harcamalar (CSV) bileşeninde dosya seç: önce harcamalar.csv dosyasını Langflow'a yükle (repoda flows/assets/finans klasöründe). Hedefler (butce-hedefleri.md) bileşeninde de aynı şekilde dosyayı seç (flows/assets/finans/notlar klasöründe). Bilgi tabanı: iki Knowledge bileşeninde de 03 oturumunda oluşturduğun finans_hedefler bilgi tabanı seçili olsun; seçili görünmüyorsa alanı yenileyip aynı adla yeniden seç. Yeni oluşturduysan hedefleri yazan Knowledge bileşeninin ▶ düğmesine bas.\n\nPlayground'da koçtan tasarruf planını notlar klasörüne bir dosya olarak kaydetmesini iste; dosya klasörde oluşmalı.",
+            "description": "### Tavily · web arama\nWeb'de arama yapar. Tool Mode açık olduğu için çıkışı Toolset olarak Tasarruf koçu Agent'ının Tools girişine bağlı; güncel bilgi gerektiğinde çağırıp çağırmamaya Agent kendisi karar verir.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "lime"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": 1
+      },
+      {
+        "id": "note-9d963",
+        "type": "noteNode",
+        "position": {
+          "x": 1360,
+          "y": 1633
+        },
+        "width": 400,
+        "height": 184,
+        "style": {
+          "width": 400,
+          "height": 184
+        },
+        "measured": {
+          "width": 400,
+          "height": 184
+        },
+        "data": {
+          "id": "note-9d963",
+          "type": "note",
+          "node": {
+            "description": "### Değişti: Tasarruf koçu\nBu Agent artık araç kullanabiliyor: Tools girişine web arama, hesap makinesi ve notlar klasörü (MCP) bağlı. Hangi aracı ne zaman çağıracağına Agent kendisi karar verir. ",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "lime"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": 1
+      },
+      {
+        "id": "note-b4b06",
+        "type": "noteNode",
+        "position": {
+          "x": 1360,
+          "y": 2147
+        },
+        "width": 400,
+        "height": 184,
+        "style": {
+          "width": 400,
+          "height": 184
+        },
+        "measured": {
+          "width": 400,
+          "height": 184
+        },
+        "data": {
+          "id": "note-b4b06",
+          "type": "note",
+          "node": {
+            "description": "### Hesap makinesi\nToplama, çarpma gibi işlemleri modele bırakmadan doğru hesaplar. Tasarruf koçu Agent'ının Tools girişine bağlı; toplam ve miktar hesaplarında devreye girer.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "lime"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": 1
+      },
+      {
+        "id": "note-a660d",
+        "type": "noteNode",
+        "position": {
+          "x": -784,
+          "y": -196
+        },
+        "width": 600,
+        "height": 256,
+        "style": {
+          "width": 600,
+          "height": 256
+        },
+        "measured": {
+          "width": 600,
+          "height": 256
+        },
+        "data": {
+          "id": "note-a660d",
+          "type": "note",
+          "node": {
+            "description": "### Renk rehberi\n\n🟨 **Sarı:** senin yapacağın eksik parça\n\n🟩 **Yeşil:** bu oturumda yeni gelen bileşenin açıklaması\n\n🟦 **Mavi kutu:** önceki oturumlardan kalan, hazır bölüm; dokunman gerekmez",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "neutral"
+            }
+          }
+        },
+        "selected": false
+      },
+      {
+        "id": "note-0fede",
+        "type": "noteNode",
+        "position": {
+          "x": -784,
+          "y": 100
+        },
+        "width": 600,
+        "height": 1144,
+        "style": {
+          "width": 600,
+          "height": 1144
+        },
+        "measured": {
+          "width": 600,
+          "height": 1144
+        },
+        "data": {
+          "id": "note-0fede",
+          "type": "note",
+          "node": {
+            "description": "### Eksik parça: MCP araç bağlantısı\n\nKoçun notlar klasörüne erişimi yok. Web arama ve hesap makinesi araçları bağlı ama dosya aracı eksik. Önce MCP sunucusunu Langflow'a tanıt:\n\n1. Langflow ayarlarında *MCP Servers* bölümünü aç, *Add MCP Server* de ve *STDIO* seç.\n2. Ad: finans-notlar. Command: npx. Argümanlar sırayla: -y, @modelcontextprotocol/server-filesystem ve assets/finans/notlar klasörünün kendi bilgisayarındaki tam yolu. Sunucudaki Langflow'da (langflow.aiweekend.net) yol: `/app/langflow/notlar/kisisel/<kullanıcı-adın>/finans` (kullanıcı adındaki boşluk yerine - yaz). Herkesin klasörü ayrıdır, ortak klasöre yazma.\n\nSonra akışta:\n\n3. Sol menüden *MCP Tools* bileşenini ekle, *MCP Server* alanından finans-notlar sunucusunu seç.\n4. Bileşenin başlığındaki *Tool Mode* anahtarını aç; bileşen bir araca dönüşür.\n5. Araç listesinde işine yarayanları açık bırak: dosya oku, dosya yaz, klasör listele, izinli klasörü göster.\n6. Araç çıkışını Tasarruf koçu (Agent) bileşeninin *Tools* girişine bağla.\n\nHazırlık: Harcamalar (CSV) bileşeninde dosya seç: önce harcamalar.csv dosyasını Langflow'a yükle (repoda assets/finans klasöründe). Hedefler (butce-hedefleri.md) bileşeninde de aynı şekilde dosyayı seç (assets/finans/notlar klasöründe). Bilgi tabanı: iki Knowledge bileşeninde de 03 oturumunda oluşturduğun finans_hedefler bilgi tabanı seçili olsun; seçili görünmüyorsa alanı yenileyip aynı adla yeniden seç. Yeni oluşturduysan hedefleri yazan Knowledge bileşeninin ▶ düğmesine bas.\n\nPlayground'da koçtan tasarruf planını notlar klasörüne bir dosya olarak kaydetmesini iste; dosya klasörde oluşmalı.\n\n**Knowledge listesi boşsa** alanı yenile ve `finans_hedefler` bilgi tabanını listeden seç.",
             "display_name": "",
             "documentation": "",
             "template": {
@@ -8778,6 +10095,54 @@
         "animated": false,
         "className": "",
         "selected": false
+      },
+      {
+        "id": "xy-edge__SmartRouter-zDjUA{œdataTypeœ:œSmartRouterœ,œidœ:œSmartRouter-zDjUAœ,œnameœ:œdefault_resultœ,œoutput_typesœ:[œMessageœ]}-Prompt-else-8b8ed{œfieldNameœ:œsoruœ,œidœ:œPrompt-else-8b8edœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "source": "SmartRouter-zDjUA",
+        "target": "Prompt-else-8b8ed",
+        "sourceHandle": "{œdataTypeœ:œSmartRouterœ,œidœ:œSmartRouter-zDjUAœ,œnameœ:œdefault_resultœ,œoutput_typesœ:[œMessageœ]}",
+        "targetHandle": "{œfieldNameœ:œsoruœ,œidœ:œPrompt-else-8b8edœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "data": {
+          "sourceHandle": {
+            "dataType": "SmartRouter",
+            "id": "SmartRouter-zDjUA",
+            "name": "default_result",
+            "output_types": ["Message"]
+          },
+          "targetHandle": {
+            "fieldName": "soru",
+            "id": "Prompt-else-8b8ed",
+            "inputTypes": ["Message"],
+            "type": "str"
+          }
+        },
+        "animated": false,
+        "className": "",
+        "selected": false
+      },
+      {
+        "id": "xy-edge__Prompt-else-8b8ed{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt-else-8b8edœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}-ChatOutput-else-8b8ed{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-else-8b8edœ,œinputTypesœ:[œDataœ,œJSONœ,œDataFrameœ,œTableœ,œMessageœ],œtypeœ:œotherœ}",
+        "source": "Prompt-else-8b8ed",
+        "target": "ChatOutput-else-8b8ed",
+        "sourceHandle": "{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt-else-8b8edœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-else-8b8edœ,œinputTypesœ:[œDataœ,œJSONœ,œDataFrameœ,œTableœ,œMessageœ],œtypeœ:œotherœ}",
+        "data": {
+          "sourceHandle": {
+            "dataType": "Prompt Template",
+            "id": "Prompt-else-8b8ed",
+            "name": "prompt",
+            "output_types": ["Message"]
+          },
+          "targetHandle": {
+            "fieldName": "input_value",
+            "id": "ChatOutput-else-8b8ed",
+            "inputTypes": ["Data", "JSON", "DataFrame", "Table", "Message"],
+            "type": "other"
+          }
+        },
+        "animated": false,
+        "className": "",
+        "selected": false
       }
     ],
     "viewport": {
@@ -8789,5 +10154,5 @@
   "is_component": false,
   "tags": [],
   "endpoint_name": null,
-  "last_tested_version": "1.13.0"
+  "last_tested_version": "1.13.3"
 }

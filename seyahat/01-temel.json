@@ -979,27 +979,154 @@
         "selected": false
       },
       {
-        "id": "note-y994h",
+        "id": "note-afa79",
         "type": "noteNode",
         "position": {
-          "x": 450,
-          "y": 100
+          "x": -40,
+          "y": 407
         },
         "width": 400,
-        "height": 380,
+        "height": 160,
         "style": {
           "width": 400,
-          "height": 380
+          "height": 160
         },
         "measured": {
           "width": 400,
-          "height": 380
+          "height": 160
         },
         "data": {
-          "id": "note-y994h",
+          "id": "note-afa79",
           "type": "note",
           "node": {
-            "description": "### Eksik parça\n\nBurada bir Prompt bileşeni eksik. Sol menüden *Prompt* ekle, şablona modelin adım adım düşünmesini isteyen bir talimat yaz (önce rota, sonra bütçe, belgeler, günlük program) ve {gezi_istegi} değişkenini kullan. Çıkışını xAI'ın *Input*'una bağla.\n\nDeğişkeni yazınca Prompt üzerinde gezi_istegi diye bir giriş belirir: *Chat Input*'un çıkışını bu girişe bağla.",
+            "description": "### Chat Input\nAkışın giriş kapısı. Playground'a yazdığın mesaj (ya da API'den gelen istek) buradan girer ve bağlı olduğu bileşenlere gider.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "lime"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": 1
+      },
+      {
+        "id": "note-48442",
+        "type": "noteNode",
+        "position": {
+          "x": 880,
+          "y": 553
+        },
+        "width": 400,
+        "height": 190,
+        "style": {
+          "width": 400,
+          "height": 190
+        },
+        "measured": {
+          "width": 400,
+          "height": 190
+        },
+        "data": {
+          "id": "note-48442",
+          "type": "note",
+          "node": {
+            "description": "### xAI (Grok)\nGrok modelini çalıştırır (grok-4.3). Prompt'tan gelen metni alır ve cevabı yazar. Anahtarını XAI_API_KEY global değişkeninden okur.",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "lime"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": 1
+      },
+      {
+        "id": "note-83af7",
+        "type": "noteNode",
+        "position": {
+          "x": 1340,
+          "y": 369
+        },
+        "width": 400,
+        "height": 150,
+        "style": {
+          "width": 400,
+          "height": 150
+        },
+        "measured": {
+          "width": 400,
+          "height": 150
+        },
+        "data": {
+          "id": "note-83af7",
+          "type": "note",
+          "node": {
+            "description": "### Chat Output\nModelin cevabını Playground'da sohbet balonu olarak gösterir. ",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "lime"
+            }
+          }
+        },
+        "selected": false,
+        "zIndex": 1
+      },
+      {
+        "id": "note-96c1c",
+        "type": "noteNode",
+        "position": {
+          "x": -800,
+          "y": 80
+        },
+        "width": 600,
+        "height": 256,
+        "style": {
+          "width": 600,
+          "height": 256
+        },
+        "measured": {
+          "width": 600,
+          "height": 256
+        },
+        "data": {
+          "id": "note-96c1c",
+          "type": "note",
+          "node": {
+            "description": "### Renk rehberi\n\n🟨 **Sarı:** senin yapacağın eksik parça\n\n🟩 **Yeşil:** bu oturumda yeni gelen bileşenin açıklaması\n\n🟦 **Mavi kutu:** önceki oturumlardan kalan, hazır bölüm; dokunman gerekmez",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "neutral"
+            }
+          }
+        },
+        "selected": false
+      },
+      {
+        "id": "note-9d086",
+        "type": "noteNode",
+        "position": {
+          "x": -800,
+          "y": 376
+        },
+        "width": 600,
+        "height": 1072,
+        "style": {
+          "width": 600,
+          "height": 1072
+        },
+        "measured": {
+          "width": 600,
+          "height": 1072
+        },
+        "data": {
+          "id": "note-9d086",
+          "type": "note",
+          "node": {
+            "description": "### Eksik parça\n\nBurada bir Prompt bileşeni eksik. Sol menüden *Prompt* ekle, şablona modelin adım adım düşünmesini isteyen bir talimat yaz (önce rota, sonra bütçe, belgeler, günlük program) ve {gezi_istegi} değişkenini kullan. Çıkışını xAI'ın *Input*'una bağla.\n\nDeğişkeni yazınca Prompt üzerinde gezi_istegi diye bir giriş belirir: *Chat Input*'un çıkışını bu girişe bağla.\n\n---\n\n**Hazır metin.** Önce kendin dene; takılırsan *Template* alanına yapıştır:\n\n```\nSen deneyimli bir seyahat danışmanısın. Kullanıcının gezi isteği:\n{gezi_istegi}\n\nCevap vermeden önce adım adım düşün ve düşünceni göster:\n1. İsteği özetle: nereye, ne zaman, kaç gün, kaç kişi, bütçe ipucu var mı?\n2. Rota: ulaşım ve konaklama bölgesi için 2 seçeneği kısaca karşılaştır, birini seç ve nedenini tek cümleyle yaz.\n3. Bütçe: uçak, konaklama, yemek, şehir içi ulaşım ve aktiviteler için kalem kalem tahmini tutar yaz.\n4. Belge kontrol listesi: pasaport (Schengen çıkışından sonra en az 3 ay geçerli olmalı), vize, sigorta ve rezervasyonlar için yapılacakları maddele.\n5. Gün gün program: her güne sabah, öğleden sonra ve akşam için birer öneri yaz.\n\nGüncel fiyat ya da vize ücreti gibi emin olmadığın bilgiyi kesinmiş gibi yazma; \"Tahmini:\" diye belirt.\n```\n\n---\n\n**xAI hatası mı aldın?** `'str' object has no attribute 'get'` görürsen *Settings > Global Variables* altındaki `XAI_API_KEY`'in adını ve değerini kontrol et. Kenar çubuğundan yeni bir xAI bileşeni eklersen *Model Name*'i `grok-4.3` seç (varsayılan model artık yok).",
             "display_name": "",
             "documentation": "",
             "template": {
@@ -1045,5 +1172,5 @@
   "is_component": false,
   "tags": [],
   "endpoint_name": null,
-  "last_tested_version": "1.13.0"
+  "last_tested_version": "1.13.3"
 }

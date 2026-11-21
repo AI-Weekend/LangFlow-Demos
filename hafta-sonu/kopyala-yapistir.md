@@ -150,9 +150,15 @@ Notlar klasöründeki tercihlerime bakarak bu hafta sonu için bir plan öner
 
 Beklenen: Cevapta tercihler.md'deki kurallar (300 TL, toplu taşıma, 11:00 öncesi yok) geçmeli.
 
-## 05 · Yerel model
+## 05 · Yayın
 
-Yapıştırılacak metin yok: Ollama bileşeninde *Model Name* olarak `llama3.2:3b` seç.
+Yapıştırılacak prompt yok: eksik parça endpoint adı (Note'taki adımlar). *Share > API access* > *Input Schema* düğmesindeki **Endpoint Name** alanına yaz:
+
+```
+hafta-sonu-asistani
+```
+
+Sonra *Share* menüsünden **Shareable Playground**'u aç. Botuna dışarıdan `https://KULLANICI-ID.ALAN-ADI/playground/<akış-id>` adresinden girersin.
 
 **Playground'da sor:**
 
@@ -160,7 +166,7 @@ Yapıştırılacak metin yok: Ollama bileşeninde *Model Name* olarak `llama3.2:
 Konak'tan Alsancak'a toplu taşımayla nasıl giderim?
 ```
 
-Beklenen: Cevap kendi bilgisayarındaki modelden gelir.
+Beklenen: Aynı akışın cevabı üç yerden gelir: Playground'dan, cURL örneğinden ve paylaştığın sohbet adresinden.
 
 ## 06 · Hakem talimatı
 

@@ -3,6 +3,7 @@
 Hands-on flows for the **AI Weekend 201** Day 1 sessions. Each session
 is a [Langflow](https://www.langflow.org) flow: you import a **starter** with one critical piece
 missing, follow the yellow Note on the canvas to complete it, and test it in the Playground.
+Everything runs on the shared Langflow server (`langflow.aiweekend.net`); nothing is installed on your machine.
 
 Together the six sessions build one assistant, layer by layer:
 
@@ -11,31 +12,36 @@ Together the six sessions build one assistant, layer by layer:
 
 ## Hızlı başlangıç (Türkçe)
 
-1. Etkinlikten önce kur: **Langflow Desktop 1.13.0**, **Ollama** (`ollama pull llama3.2:3b`, yalnız 05 için)
-   ve **Node.js**.
+1. Kurulum yok: Langflow (1.13.3) ortak sunucuda (`langflow.aiweekend.net`) çalışır. Kendi hesabınla tarayıcıdan gir.
 2. Eğitmenden `XAI_API_KEY`, `OPENAI_API_KEY` (embedding) ve `TAVILY_API_KEY` anahtarlarını al. Langflow'da *Settings > Global
    Variables* altında **Credential** türünde, tam bu adlarla ekle.
 3. Bir track seç: `mutfak` (ana track), `hafta-sonu`, `finans` veya `seyahat`.
 4. Oturumun starter dosyasını (`<track>/0N-….json`) Langflow'a yükle, tuvaldeki sarı Note'u oku,
    eksik parçayı tamamla ve Playground'da dene. Takılırsan bir sonraki oturumun starter'ı önceki katmanları hazır getirir.
-   Hazır metinler (Prompt, router kuralları, hakem talimatı) `<track>/kopyala-yapistir.md` dosyasında.
+   Hazır metinler (Prompt, router kuralları, hakem talimatı) sarı Note'un içinde, ayrıca `<track>/kopyala-yapistir.md` dosyasında.
 5. Dosya seçicileri (File) içe aktarmadan sonra boş gelir: dosyaları `assets/<track>/` klasöründen
    yeniden seç.
 
+### Tuvaldeki renkler
+
+Her akış öncekinin üstüne yeni bir katman ekler. Neyin yeni olduğunu şöyle ayırt edersin:
+
+| Renk | Anlamı |
+|---|---|
+| 🟨 **Sarı Note** (solda) | Senin yapacağın eksik parça; adımlar ve hazır metin burada. |
+| 🟩 **Yeşil Note** | Bu oturumda yeni gelen bir bileşenin ne olduğunu ve ne işe yaradığını 2-3 cümleyle anlatır. Bileşenin hemen altındadır. |
+| 🟦 **Mavi kutu** | Önceki oturumlardan kalan, hazır bir bileşen. Başlığında hangi oturumdan geldiği ve ne işe yaradığı yazar; dokunman gerekmez. |
+
 ## Before the event
 
-Do all of this on your own machine ahead of time; the session itself assumes it is done.
+Langflow (1.13.3, the version the flow JSONs were aligned to) runs on the shared server `langflow.aiweekend.net`, one account per
+participant, so participants install nothing. What has to be ready before the session:
 
 | What | How |
 |---|---|
-| **Langflow Desktop 1.13.0** | Install that exact version. The flow JSONs were exported from it. |
-| **Ollama** | Install from [ollama.com](https://ollama.com), then `ollama pull llama3.2:3b` (local chat model, used only in session 05). |
-| **Node.js** | Needed for `npx`, which starts the filesystem MCP server (session 04 onward). |
+| **Account** | Each participant signs up on the shared Langflow server. |
+| **Node.js** | Needed on the server for `npx`, which starts the filesystem MCP server (session 04 onward). |
 | **API keys** | Get `XAI_API_KEY` (xAI, model `grok-4.3`), `OPENAI_API_KEY` (embeddings, model `text-embedding-3-small`) and `TAVILY_API_KEY` (web search) from the instructor. Keys live only in Langflow, never in a flow file. |
-
-> **Corporate networks:** `ollama pull` can fail behind TLS inspection or a zero-trust proxy because
-> the model registry redirects downloads to Cloudflare R2. If it hangs or errors, pull the model
-> on another network or a phone hotspot.
 
 ### Add the keys to Langflow
 
@@ -45,10 +51,11 @@ Do all of this on your own machine ahead of time; the session itself assumes it 
 - `OPENAI_API_KEY`
 - `TAVILY_API_KEY`
 
-### Connect Ollama to Langflow (once)
+### If xAI fails
 
-*Settings > Model Providers > Ollama*, base URL `http://localhost:11434`. Session 05 needs this. If your Langflow asks for an environment-style variable instead, add a
-Generic global variable `OLLAMA_BASE_URL` with the same URL.
+- `'str' object has no attribute 'get'` almost always means the `XAI_API_KEY` global variable is missing, misspelled or empty.
+  Check its name and value under *Settings > Global Variables*.
+- A new xAI component dragged from the sidebar defaults to `grok-2-latest`, which no longer exists (404). Set *Model Name* to `grok-4.3`.
 
 ## Pick a track
 
@@ -72,7 +79,7 @@ All input data is synthetic and lives in `assets/<track>/`.
 | `02-akis` | Agentic Workflows | Smart Router + specialist Agents | The router's routes. |
 | `03-hafiza` | Advanced RAG & Memory | Knowledge base retrieval + chat memory | The knowledge base (and its embedding model). |
 | `04-araclar` | MCP & Tool Calling | Web search, calculator, filesystem MCP | The MCP Tools node. |
-| `05-yayin` | Deploy the Agent | API endpoint + local Ollama model | The local model name. |
+| `05-yayin` | Deploy the Agent | API endpoint + shareable chat URL | The endpoint name. |
 | `06-izleme` | LLMOps | LLM-as-judge + Traces | The judge prompt. |
 
 For each session: *Upload a flow* with `<track>/0N-….json`, read the yellow Note, finish the
@@ -89,6 +96,12 @@ with every earlier layer already complete.
   *Settings > Global Variables* before the flow avoids it.
 - **"Setup Provider" button.** Agent and Smart Router can show a black *Setup Provider* button even
   when a model is wired in. Ignore it; the flow runs.
+
+### Off-topic questions (Else branch)
+
+From session 02 the Smart Router has its **Else** output on: a message that matches no route goes to a fixed *Konu dışı istemi*
+Prompt and a *Konu dışı cevabı* Chat Output, which tells the user what the assistant can help with. Without it an off-topic
+question got no answer at all.
 
 ### From session 03: create and fill the knowledge base
 
@@ -111,6 +124,13 @@ Neither the starter nor the solution JSON carries it, so on each machine:
 
 3. Back in the flow, select that knowledge base on **both** Knowledge components, pick the source
    file(s) in `Read File`, and press the play button on the **Ingest** component once.
+
+The knowledge base name must match the table **exactly**: the flows select it by name, and a different or re-created name makes the
+Knowledge component return 404. If its list is empty in a later session, refresh the field and pick the knowledge base again.
+
+In `mutfak` the chat memory persists across Playground sessions (`session_id` is fixed to `kalici-hafiza` on the Chat Input, every Chat Output and
+Message History, from 03 to 06), so what the user said in an earlier session, such as a diet or allergy, is remembered. Other tracks keep
+memory within one Playground session.
 
 Use the Knowledge page, not the Knowledge component's own *Create new Knowledge Base* dialog: in 1.13
 that dialog cannot be submitted. Later sessions keep the same knowledge base, so you only do this once.
@@ -136,12 +156,20 @@ to the Agent's *Tools*. In *Actions* keep only the four you need: `list_allowed_
 `read_text_file`, `append_file`, `edit_file`. This applies to the **solutions too**: a solution from
 `04` onward runs only after its MCP server and knowledge base exist.
 
-### Session 05: deploy and run locally
+### Session 05: deploy
 
-- The flow's endpoint name (for example `mutfak-asistani`) is set in the JSON. Importing a second flow
-  with the same name makes Langflow add a `-1` suffix; use the name shown in *Share > API access*.
-- The model is `llama3.2:3b` on your own Ollama, so replies are slower, less accurate, and not
-  deterministic. That is part of the lesson ("local is weaker"), not a bug. Flow 06 goes back to xAI.
+There is no new component in this session; the flow is session 04's, published three ways.
+
+- **Endpoint name (the missing piece):** the starter ships without one. In *Share > API access > Input Schema* the
+  participant sets `<track>-asistani` (for example `mutfak-asistani`). A second flow with the same name gets a `-1` suffix;
+  use the name shown in the panel.
+- **API:** the cURL example in the same panel calls the flow. The API key comes from *Settings > Langflow API Keys*
+  and goes into `LANGFLOW_API_KEY`, never into the command.
+- **Shareable chat page:** *Share > Shareable Playground* gives the flow its own chat page at `/playground/<flow-id>`.
+- **Per-user URL:** the yellow Note tells each participant to reach their bot at
+  `https://KULLANICI-ID.ALAN-ADI/playground/<flow-id>`. That host is served by the instructor-side reverse proxy,
+  which routes by user id. Replace `KULLANICI-ID.ALAN-ADI` in the `05-yayin` flows once the real domain is known
+  (the same string appears in all four tracks' notes).
 
 ### Session 06: observe
 
@@ -164,5 +192,5 @@ Optional external tracers: set the variables in Langflow Desktop's `.env` (macOS
   varies. One early Playground reply took over two minutes while several people shared one key.
 - **Shared keys:** if everyone uses the instructor's keys, run a load dry-run with the full group size
   before the event.
-- **Local 3B model:** `llama3.2:3b` mis-routes and hallucinates more than Grok; the session 05 demo
-  uses a narrow, recipe-book question on purpose.
+- **Reverse proxy:** session 05 only works end to end if the per-user host in the Note resolves to that
+  participant's flows. Test one participant's URL before the session.
