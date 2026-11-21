@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "mutfak-notlar": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/TAM/YOL/LangFlow-Demos/assets/mutfak/notlar"
+      ]
+    }
+  }
+}
