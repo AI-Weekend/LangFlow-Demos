@@ -21,15 +21,136 @@ Cevap vermeden önce adım adım düşün ve düşünceni göster:
 4. Sonunda "Uyarı:" başlığıyla en önemli iki aşımı tek cümleyle özetle.
 ```
 
+**Playground'da sor:**
+
+```
+Bu ay bütçemi aştım mı?
+```
+
+Beklenen: Önce kategorilere göre toplam ve limitlerle karşılaştırma, sonra "Uyarı:" özeti.
+
 ## 02 · Smart Router yönlendirme kuralları
 
-*Routes* tablosuna her satır için *Route Name* ve *Route Description*:
+*Smart Router* → *Routes* → *Open table*. Sol alttaki **+** ile her dal için bir satır ekle, hücrelere aşağıdakileri yapıştır, sonra *Save*.
 
-| Route Name | Route Description |
-|---|---|
-| Bütçe uyarısı | Kullanıcı harcamalarının bütçeyi ya da kategori limitlerini aşıp aşmadığını, nereye çok harcadığını soruyor. |
-| Kategori raporu | Kullanıcı harcamalarının kategorilere göre tablo ya da dökümünü istiyor. |
-| Tasarruf koçu | Kullanıcı birikim yapmak, harcamayı kısmak ya da bir tasarruf hedefine ulaşmak için ne yapması gerektiğini soruyor; yeni bir hedef bildiriyor ya da yukarıdaki iki dala girmeyen başka bir finans isteği var. |
+### Satır 1: Bütçe uyarısı
+
+**Route Name**
+
+```
+Bütçe uyarısı
+```
+
+**Route Description**
+
+```
+Kullanıcı harcamalarının bütçeyi ya da kategori limitlerini aşıp aşmadığını, nereye çok harcadığını soruyor.
+```
+
+**Route Message (Optional)**: boş bırak.
+
+### Satır 2: Kategori raporu
+
+**Route Name**
+
+```
+Kategori raporu
+```
+
+**Route Description**
+
+```
+Kullanıcı harcamalarının kategorilere göre tablo ya da dökümünü istiyor.
+```
+
+**Route Message (Optional)**: boş bırak.
+
+### Satır 3: Tasarruf koçu
+
+**Route Name**
+
+```
+Tasarruf koçu
+```
+
+**Route Description**
+
+```
+Kullanıcı birikim yapmak, harcamayı kısmak ya da bir tasarruf hedefine ulaşmak için ne yapması gerektiğini soruyor; yeni bir hedef bildiriyor ya da yukarıdaki iki dala girmeyen başka bir finans isteği var.
+```
+
+**Route Message (Optional)**: boş bırak.
+
+> **Route Name** harfi harfine yukarıdaki gibi olmalı: router'daki çıkışın adı bu olur ve model cevabında bu adı döndürür.
+> **Route Message**'ı doldurma: doluysa router kullanıcının sorusu yerine o metni uzmana gönderir, Prompt ve Agent soruyu hiç görmez.
+
+**Playground'da sor** (her soruyu ayrı mesaj olarak gönder; her biri başka bir *Chat Output*'tan dönmeli):
+
+→ *Bütçe uyarısı* dalı
+
+```
+Bu ay hangi kategorilerde limiti aştım?
+```
+
+→ *Kategori raporu* dalı
+
+```
+Harcamalarımı kategoriye göre tablo halinde göster
+```
+
+→ *Tasarruf koçu* dalı
+
+```
+Ay sonunda 3.000 TL biriktirmek için neyi kısmalıyım?
+```
+
+## 03 · Bilgi tabanı
+
+Yapıştırılacak metin yok: bilgi tabanını oluştur, iki *Knowledge* bileşeninde seç, *Ingest* ▶'a bir kez bas (Note'taki adımlar).
+
+**Playground'da sor:**
+
+```
+Hedeflerime göre nereden kısmam gerekiyor?
+```
+
+Beklenen: Koç limitleri bilgi tabanından (butce-hedefleri.md) getirmeli.
+
+```
+Yeni hedefim: yazın tatil için 10.000 TL biriktirmek.
+```
+
+Beklenen: Yeni hedefi söyle.
+
+```
+Bu hedefe göre bu ay ne kadar kenara koymalıyım?
+```
+
+Beklenen: Aynı sohbette sor: yeni hedefi hatırlamalı.
+
+## 04 · MCP araçları
+
+Yapıştırılacak metin yok: MCP sunucusunu kaydet, *MCP Tools* bileşenini Agent'ın *Tools*'una bağla (Note'taki adımlar).
+
+**Playground'da sor:**
+
+```
+Tasarruf planımı notlar klasörüne tasarruf-plani.md olarak kaydet
+```
+
+Beklenen: assets/finans/notlar altında dosya oluşmalı.
+
+## 05 · Yerel model
+
+Yapıştırılacak metin yok: Ollama bileşeninde *Model Name* olarak `llama3.2:3b` seç.
+
+**Playground'da sor:**
+
+```
+Bu ay toplam ne kadar harcadım?
+```
+
+Beklenen: Küçük yerel model sayıları bazen yanlış toplar; farkı gözle.
 
 ## 06 · Hakem talimatı
 
@@ -50,3 +171,11 @@ Yalnızca iki satır yaz:
 Puan: N
 Gerekçe: tek cümle
 ```
+
+**Playground'da sor:**
+
+```
+Eğlence harcamamı nasıl azaltabilirim?
+```
+
+Beklenen: İki cevap gelir: koçun cevabı ve Hakem puanı.

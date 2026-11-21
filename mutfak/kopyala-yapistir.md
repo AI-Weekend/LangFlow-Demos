@@ -19,15 +19,130 @@ Cevap vermeden önce adım adım düşün ve düşünceni göster:
 Evde olmayan bir malzeme gerekiyorsa en sonda "Eksik:" başlığıyla ayrıca belirt.
 ```
 
+**Playground'da sor:**
+
+```
+Evde mercimek, soğan ve havuç var. Ne pişirebilirim?
+```
+
+Beklenen: Önce adım adım düşünce (ana malzeme, 2-3 fikir, seçim), sonra tarif.
+
 ## 02 · Smart Router yönlendirme kuralları
 
-*Routes* tablosuna her satır için *Route Name* ve *Route Description*:
+*Smart Router* → *Routes* → *Open table*. Sol alttaki **+** ile her dal için bir satır ekle, hücrelere aşağıdakileri yapıştır, sonra *Save*.
 
-| Route Name | Route Description |
-|---|---|
-| Tarif | Kullanıcı elindeki malzemelerle ne pişirebileceğini, bir yemeğin nasıl yapıldığını, ne pişirmesi gerektiğine dair öneri ya da tarif defterindeki bir tarifin malzemesini veya alerjenini soruyor. |
-| Alışveriş listesi | Kullanıcı bir yemek ya da menü için neler alması gerektiğini, alışveriş listesini istiyor. |
-| Beslenme | Kullanıcı kalori, protein, vitamin gibi besin değerlerini soruyor, bir yemeğin sağlıklı olup olmadığını soruyor ya da kendi diyetini, alerjisini veya beslenme kısıtını anlatıyor. |
+### Satır 1: Tarif
+
+**Route Name**
+
+```
+Tarif
+```
+
+**Route Description**
+
+```
+Kullanıcı elindeki malzemelerle ne pişirebileceğini, bir yemeğin nasıl yapıldığını, ne pişirmesi gerektiğine dair öneri ya da tarif defterindeki bir tarifin malzemesini veya alerjenini soruyor.
+```
+
+**Route Message (Optional)**: boş bırak.
+
+### Satır 2: Alışveriş listesi
+
+**Route Name**
+
+```
+Alışveriş listesi
+```
+
+**Route Description**
+
+```
+Kullanıcı bir yemek ya da menü için neler alması gerektiğini, alışveriş listesini istiyor.
+```
+
+**Route Message (Optional)**: boş bırak.
+
+### Satır 3: Beslenme
+
+**Route Name**
+
+```
+Beslenme
+```
+
+**Route Description**
+
+```
+Kullanıcı kalori, protein, vitamin gibi besin değerlerini soruyor, bir yemeğin sağlıklı olup olmadığını soruyor ya da kendi diyetini, alerjisini veya beslenme kısıtını anlatıyor.
+```
+
+**Route Message (Optional)**: boş bırak.
+
+> **Route Name** harfi harfine yukarıdaki gibi olmalı: router'daki çıkışın adı bu olur ve model cevabında bu adı döndürür.
+> **Route Message**'ı doldurma: doluysa router kullanıcının sorusu yerine o metni uzmana gönderir, Prompt ve Agent soruyu hiç görmez.
+
+**Playground'da sor** (her soruyu ayrı mesaj olarak gönder; her biri başka bir *Chat Output*'tan dönmeli):
+
+→ *Tarif* dalı
+
+```
+Elimde yumurta ve ıspanak var, ne yapabilirim?
+```
+
+→ *Alışveriş listesi* dalı
+
+```
+Bu hafta için 4 kişilik bir alışveriş listesi çıkar
+```
+
+→ *Beslenme* dalı
+
+```
+Mercimek çorbası besleyici mi, kaç kalori civarı?
+```
+
+## 03 · Bilgi tabanı
+
+Yapıştırılacak metin yok: bilgi tabanını oluştur, iki *Knowledge* bileşeninde seç, *Ingest* ▶'a bir kez bas (Note'taki adımlar).
+
+**Playground'da sor:**
+
+```
+Ispanaklı böreğin alerjenleri neler?
+```
+
+Beklenen: Cevap tarif defterinden (PDF) gelir.
+
+```
+Ben glutensiz besleniyorum. Tarif defterinden ne önerirsin?
+```
+
+Beklenen: Aynı sohbette sor: glutenli tarifi önermemeli, önceki mesajı hatırlıyor.
+
+## 04 · MCP araçları
+
+Yapıştırılacak metin yok: MCP sunucusunu kaydet, *MCP Tools* bileşenini Agent'ın *Tools*'una bağla (Note'taki adımlar).
+
+**Playground'da sor:**
+
+```
+Alışveriş listeme 2 kilo domates ekle
+```
+
+Beklenen: Sonra assets/mutfak/notlar/alisveris.md dosyasını aç: "2 kilo domates" eklenmiş olmalı.
+
+## 05 · Yerel model
+
+Yapıştırılacak metin yok: Ollama bileşeninde *Model Name* olarak `llama3.2:3b` seç.
+
+**Playground'da sor:**
+
+```
+Ispanaklı böreğin alerjenleri neler?
+```
+
+Beklenen: Cevap kendi bilgisayarındaki modelden gelir: daha yavaş ve daha zayıf olabilir.
 
 ## 06 · Hakem talimatı
 
@@ -46,3 +161,11 @@ Yalnızca iki satır yaz:
 Puan: N
 Gerekçe: tek cümle
 ```
+
+**Playground'da sor:**
+
+```
+Kuzenim Elif için tarif defterinden bir tatlı öner
+```
+
+Beklenen: Fıstıklı sütlaç uyarısız önerilirse Hakem puanı düşük (1) olmalı. Sonra sol kenarda Traces'i aç.

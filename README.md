@@ -94,6 +94,8 @@ with every earlier layer already complete.
 
 Starting at `03-hafiza`, the flow retrieves from a local knowledge base (SQLite, no server). Its
 embeddings come from OpenAI, so `OPENAI_API_KEY` must be set first.
+Then open *Settings > Model Providers > OpenAI* and switch on `text-embedding-3-small` under
+*Embedding Models*: it is off by default, and until it is on, *Add Knowledge* shows "No models enabled".
 Neither the starter nor the solution JSON carries it, so on each machine:
 
 1. Open the **Knowledge** page (left sidebar, bottom) and choose *Add Knowledge*.
