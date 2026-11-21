@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "hafta-sonu-notlar": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/TAM/YOL/LangFlow-Demos/assets/hafta-sonu/notlar"
+      ]
+    }
+  }
+}

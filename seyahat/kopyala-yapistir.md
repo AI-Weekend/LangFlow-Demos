@@ -109,7 +109,24 @@ Beklenen: Pasaportun yetmediğini, belge kontrol listesine (PDF) dayanarak söyl
 
 ## 04 · MCP araçları
 
-Yapıştırılacak metin yok: MCP sunucusunu kaydet, *MCP Tools* bileşenini Agent'ın *Tools*'una bağla (Note'taki adımlar).
+*Settings > MCP Servers > Add MCP Server > JSON* sekmesine yapıştır (aynısı `mcp-sunucu.json` dosyasında). `/TAM/YOL/LangFlow-Demos` kısmını repoyu indirdiğin klasörün tam yoluyla değiştir (Finder'da klasöre sağ tık, Option basılıyken *Copy as Pathname*), sonra *Add Server*. Node.js kurulu olmalı.
+
+```json
+{
+  "mcpServers": {
+    "seyahat-notlar": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/TAM/YOL/LangFlow-Demos/assets/seyahat/notlar"
+      ]
+    }
+  }
+}
+```
+
+Sonra *MCP Tools* bileşenini ekle, sunucuyu seç, *Tool Mode*'u aç ve Agent'ın *Tools*'una bağla (Note'taki adımlar).
 
 **Playground'da sor:**
 
